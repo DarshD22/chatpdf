@@ -13,7 +13,7 @@ const return_url = process.env.NEXT_BASE_URL + "/";
 
 export async function GET() {
   try {
-    const { userId } = await auth();
+    const { userId } = auth();
     const user = await currentUser();
 
     if (!userId) {
