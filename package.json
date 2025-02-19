@@ -6,7 +6,8 @@
     "dev": "export NODE_OPTIONS='--max-old-space-size=8192' && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npx update-browserslist-db@latest"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.414.0",
