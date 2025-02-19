@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "npx update-browserslist-db@latest"
+    "vercel-build": "npx update-browserslist-db@latest && next build"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.414.0",
