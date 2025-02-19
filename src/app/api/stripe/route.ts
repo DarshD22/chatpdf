@@ -1,4 +1,5 @@
 // /api/stripe
+export const dynamic = "force-dynamic"; // Prevents static optimization
 
 import { db } from "@/lib/db";
 import { userSubscriptions } from "@/lib/db/schema";
@@ -8,7 +9,6 @@ import { eq } from "drizzle-orm";
 import { NextResponse } from "next/server";
 
 
-// export const dynamic = "force-dynamic"; // Prevents static optimization
 const return_url = process.env.NEXT_BASE_URL + "/";
 
 export async function GET() {
